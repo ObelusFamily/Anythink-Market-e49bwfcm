@@ -52,6 +52,7 @@ require("./models/User");
 require("./models/Item");
 require("./models/Comment");
 require("./config/passport");
+var User = mongoose.model("User");
 
 app.use(require("./routes"));
 
@@ -87,3 +88,4 @@ app.use(function(err, req, res, next) {
 var server = app.listen(process.env.PORT || 3000, function() {
   console.log("Listening on port " + server.address().port);
 });
+
