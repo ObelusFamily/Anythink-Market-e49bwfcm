@@ -10,8 +10,8 @@ var Item = mongoose.model("Item");
 
 for(let i = 0; i < 100; i++){
     let user = new User();
-  user.username = "Xavier"+i;
-  user.email = i+"xavier.belenus@gmail.com";
+  user.username = "woooz"+i;
+  user.email = i+"zoooow.beooos@gmzal.com";
   user.setPassword("password")
   user.save()
     let item = new Item()
