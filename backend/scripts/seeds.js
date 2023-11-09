@@ -10,16 +10,16 @@ var Item = mongoose.model("Item");
 function seed(){
     for(let i = 0; i < 100; i++){
         let user = new User();
-      user.username = "plpk"+i;
-      user.email = i+"qddf.beooos@gmaezal.com";
+      user.username = "plpk"+Date.now();
+      user.email = Date.now()+"qddf.beooos@gmaezal.com";
       user.setPassword("password")
       user.save()
         let item = new Item()
-        item.title = "aze"+i
-        item.description = "descrezezaiption"+i
+        item.title = "aze"+Date.now()
+        item.description = "descrezezaiption"+Date.now()
         item.save()
         let comment = new Comment();
-        comment.body = "commsfsent"+i
+        comment.body = "commsfsent"+Date.now()
         comment.save()
     }
 }
